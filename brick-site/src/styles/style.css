@@ -6,12 +6,18 @@
 }
 
 @font-face {
-    font-family: 'Nexa';
+    font-family: 'Nexa Heavy';
     src: url('fonts/Nexa-Heavy.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
+@font-face {
+  font-family: 'Akira Expanded';
+  src: url('../fonts/Akira Expanded Demo.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
     margin: 0;
@@ -20,7 +26,7 @@ body {
 }
 
 main {
-  font-family: 'Nexa', Arial, sans-serif;
+  font-family: 'Nexa Heavy', Arial, sans-serif;
   font-size: 17px;
   font-weight: 500;
 }
@@ -40,7 +46,7 @@ h1 {
 }
 
 button {
-  background: #ffffff;
+  background: #f4f4f4;
   line-height: 1;
   vertical-align: middle;
   padding: 12px 12px;
@@ -62,4 +68,35 @@ button:hover {
 button:active {
   transform: translate(0.05em, 0.05em);
   box-shadow: 0.05em 0.05em;
+}
+.revolving-text {
+  width: 100%;
+  overflow: hidden;
+  background-color: #f4f4f4;
+  color: #BC4A3C;
+  font-family: 'Akira Expanded', Arial, sans-serif;
+  padding: 10px 0;
+  white-space: nowrap;
+  position: relative;
+}
+
+.revolving-inner {
+  display: inline-block;
+  white-space: nowrap;
+  will-change: transform;
+  animation: scroll-left 70s linear infinite;
+}
+
+.revolving-inner span {
+  display: inline-block;
+  padding-right: 20px; 
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
