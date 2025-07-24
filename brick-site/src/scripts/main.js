@@ -13,12 +13,3 @@ window.addEventListener("DOMContentLoaded", () => {
     inner.appendChild(clone);
   }
 });
-
-document.addEventListener('DOMContentLoaded', () => {
-  const menuBtn = document.querySelector('button');
-  const menuPanel = document.getElementById('menuPanel');
-
-  menuBtn.addEventListener('click', () => {
-    menuPanel.classList.toggle('open');
-  });
-});
