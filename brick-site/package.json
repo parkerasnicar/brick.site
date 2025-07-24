@@ -1,7 +1,7 @@
 {
-  "name": "simple-website",
+  "name": "brick-site",
   "version": "1.0.0",
-  "description": "A simple website project",
+  "description": "a site of dreams",
   "main": "src/index.html",
   "scripts": {
     "start": "open src/index.html"

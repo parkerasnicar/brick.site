@@ -2,20 +2,6 @@
 
 This project is a simple website that demonstrates the basic structure of an HTML document, along with accompanying CSS for styling and JavaScript for interactivity.
 
-## Project Structure
-
-```
-simple-website
-├── src
-│   ├── index.html       # Main HTML document
-│   ├── styles
-│   │   └── style.css    # Styles for the website
-│   └── scripts
-│       └── main.js      # JavaScript code for interactivity
-├── package.json         # npm configuration file
-└── README.md            # Project documentation
-```
-
 ## Getting Started
 
 To get started with this project, follow these steps:
