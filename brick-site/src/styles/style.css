@@ -3,17 +3,26 @@
     src: url('fonts/PackyGreat.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+}
 
+@font-face {
     font-family: 'Nexa';
     src: url('fonts/Nexa-Heavy.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
+
 body {
     margin: 0;
     font-family: 'Packy Great', Arial, sans-serif;
     background-color: #f4f4f4;
+}
+
+main {
+  font-family: 'Nexa', Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 500;
 }
 
 header {
@@ -26,7 +35,6 @@ header {
 h1 {
     margin: 0;
     color: #ffffff;
-    padding-left: 40px;
     font-size: 75px;
     font-family: 'Packy Great', Arial, sans-serif;
 }
