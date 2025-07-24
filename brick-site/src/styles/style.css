@@ -12,13 +12,54 @@ body {
 }
 
 header {
-    background: #757575;
-    color: #ffffff;
-    padding: 20px;
-    padding-left: 20px;
+    background: #BC4A3C;
+    padding-top: 120px;
+    padding-bottom: 25px;
     text-align: left;
 }
 
+/*HEADERS*/
+
 h1 {
     margin: 0;
+    color: #ffffff;
+    padding-left: 40px;
+    font-size: 75px;
+}
+
+/*BUTTONS*/
+
+button {
+  /* Variables */
+  --button_radius: 12px;
+  --button_color: #e8e8e8;
+  --button_outline_color: #000000;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--button_radius);
+  background: var(--button_outline_color);
+}
+
+.button_top {
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid var(--button_outline_color);
+  border-radius: var(--button_radius);
+  padding: 12px 24px;
+  background: var(--button_color);
+  color: var(--button_outline_color);
+  transform: translateY(-3.2px);
+  transition: transform 0.1s ease;
+}
+
+button:hover .button_top {
+  /* Pull the button upwards when hovered */
+  transform: translateY(-5.28px);
+}
+
+button:active .button_top {
+  /* Push the button downwards when pressed */
+  transform: translateY(0);
 }
