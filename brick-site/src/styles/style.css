@@ -106,7 +106,8 @@ button:active {
 
 .carousel-track {
   display: flex;
-  width: 300%; /* Adjust based on the number of images */
+  width: 100%; /* Adjust as needed */
+  transition: transform 0.8s ease-in-out; /* ← This is critical */
 }
 
 .carousel-track img {
@@ -121,27 +122,35 @@ button:active {
   max-height: 800px;
 }
 
-
 /* Carousel navigation buttons */
 .carousel-button {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
   background-color: rgba(255, 255, 255, 0.7);
   border: none;
   font-size: 2rem;
   cursor: pointer;
   z-index: 10;
-  padding: 10px;
-  border-radius: 50%;
+  padding: 10px 15px;
+  border-radius: 0.4em;
+}
+
+.carousel-button:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}
+
+.carousel-button:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
 }
 
 .carousel-button.left {
-  left: 10px;
+  left: 50px;
 }
 
 .carousel-button.right {
-  right: 10px;
+  right: 50px;
 }
 
 /*
