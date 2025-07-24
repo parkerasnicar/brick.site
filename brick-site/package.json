@@ -1,0 +1,12 @@
+{
+  "name": "simple-website",
+  "version": "1.0.0",
+  "description": "A simple website project",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "open src/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
