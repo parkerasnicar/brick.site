@@ -81,6 +81,4 @@ document.addEventListener('DOMContentLoaded', function () {
   } else {
     console.warn("Carousel buttons not found in DOM.");
   }
-
-  setInterval(moveToNextSlide, 5000);
 });
