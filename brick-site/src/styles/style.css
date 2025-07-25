@@ -175,12 +175,11 @@ button:active {
   background-color: rgba(255, 255, 255, 1);
 }
 
-/*
 .exclaim {
-  position: fixed;
-  top: 47%;
+  position: absolute;
+  top: 500px;
   left: 60%;
-  width: 380px;
+  width: 450px;
   z-index: 1000;
   animation: shake 0.9s infinite steps(1);
   transform: translate(var(--x), var(--y)) rotate(0deg);
@@ -188,19 +187,19 @@ button:active {
 
 .top-exclaim {
   --x: -155px;
-  --y: -450px;
+  --y: 340px;
   animation-delay: 0s;
 }
 
 .middle-exclaim {
   --x: -160px;
-  --y: -470px;
+  --y: 320px;
   animation-delay: 0.05s;
 }
 
 .bottom-exclaim {
-  --x: -165px;
-  --y: -450px;
+  --x: -160px;
+  --y: 310px;
   animation-delay: 0.1s;
 }
 
