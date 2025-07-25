@@ -107,7 +107,7 @@ button:active {
 .carousel-track {
   display: flex;
   width: 100%; /* Adjust as needed */
-  transition: transform 0.8s ease-in-out; /* ← This is critical */
+  transition: transform 1s ease-in-out; /* ← This is critical */
 }
 
 .carousel-track img {
@@ -151,6 +151,28 @@ button:active {
 
 .carousel-button.right {
   right: 50px;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.carousel-indicators .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: background-color 0.3s;
+}
+
+.carousel-indicators .dot.active {
+  background-color: rgba(255, 255, 255, 1);
 }
 
 /*
