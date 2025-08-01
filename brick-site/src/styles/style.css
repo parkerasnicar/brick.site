@@ -208,3 +208,19 @@ button:active {
   50%  { transform: translate(var(--x), var(--y)) rotate(15deg); }
   100% { transform: translate(var(--x), var(--y)) rotate(5deg); }
 }
+
+.pop-up {
+  background: #f4f4f4;
+  line-height: 1;
+  vertical-align: middle;
+  padding: 12px 12px;
+  margin-bottom: 10px;
+  font-weight: 200;
+  font-size: 25PX;
+  color: #BC4A3C;
+  border: 3px solid #BC4A3C;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+  cursor: pointer;
+  font-family: 'Packy Great', Arial, sans-serif;
+}
